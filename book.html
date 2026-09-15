@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a clinical assessment — P2H</title>
+<meta name="description" content="Request a free, confidential ASAM assessment with a licensed P2H clinician.">
+<link rel="stylesheet" href="css/modernist.css">
+<link rel="stylesheet" href="css/p2h.css">
+</head>
+<body>
+
+<div class="crisis">
+  <div class="wrap">
+    <span>In crisis? Call or text 988. In an emergency, call 911.</span>
+    <span style="opacity:0.75">Admissions answered 24 hours a day</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html" style="display:flex;align-items:center;gap:10px;color:inherit">
+        <span class="brand-mark">P2</span>
+        <span>P2H</span>
+      </a>
+      <a href="levels-of-care.html">Levels of care</a>
+      <a href="locations.html">Locations</a>
+      <a href="resources.html">Resources</a>
+      <a href="tel:14105550142" style="color:inherit;font-size:14px">(410) 555-0142</a>
+      <a class="btn btn-primary" href="book.html">Book an assessment</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="wrap pad grid cols-2" style="align-items:start">
+    <div class="stack">
+      <h6 class="text-accent" style="margin:0">Book a clinical assessment</h6>
+      <h1 style="margin:0;font-size:clamp(38px,4.8vw,58px);letter-spacing:-0.03em">One conversation, and you'll know where you stand.</h1>
+      <p style="font-size:17px;margin:0;max-width:46ch">A licensed clinician — not a call center — walks through your history, your obligations, and your coverage, then recommends a level of care. About 45 minutes, by phone or in person, at no cost.</p>
+      <div class="rule-list" style="margin-top:var(--space-2)">
+        <div class="row"><span class="key" style="min-width:32px;color:var(--color-accent-700)">01</span><span style="font-size:15px">You send this form or call. We respond the same day.</span></div>
+        <div class="row"><span class="key" style="min-width:32px;color:var(--p2h-teal)">02</span><span style="font-size:15px">We verify your benefits and tell you the real out-of-pocket number.</span></div>
+        <div class="row"><span class="key" style="min-width:32px;color:var(--p2h-ochre)">03</span><span style="font-size:15px">The ASAM assessment sets your level of care — outpatient with us in Easton, or a warm referral if you need a bed before Baltimore opens.</span></div>
+        <div class="row"><span class="key" style="min-width:32px">04</span><span style="font-size:15px">You start — often the same or next day, with transportation if you need it.</span></div>
+      </div>
+    </div>
+
+    <!-- Static hosting can't process form posts. Point action= at Formspree / Netlify Forms / your intake CRM endpoint. -->
+    <form style="border:2px solid var(--color-text);padding:var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)" action="#" method="post">
+      <h3 style="margin:0">Request an assessment</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:var(--space-3)">
+        <div class="field"><label for="first">First name</label><input class="input" id="first" name="first" type="text" required></div>
+        <div class="field"><label for="last">Last name</label><input class="input" id="last" name="last" type="text" required></div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:var(--space-3)">
+        <div class="field"><label for="phone">Phone</label><input class="input" id="phone" name="phone" type="tel" required></div>
+        <div class="field"><label for="email">Email</label><input class="input" id="email" name="email" type="email"></div>
+      </div>
+      <div class="field">
+        <label>Who is this for?</label>
+        <div style="display:flex;flex-wrap:wrap;gap:var(--space-4);padding-top:2px">
+          <label class="radio"><input type="radio" name="who" value="self" checked><span class="dot"></span>Myself</label>
+          <label class="radio"><input type="radio" name="who" value="loved-one"><span class="dot"></span>A loved one</label>
+          <label class="radio"><input type="radio" name="who" value="referral"><span class="dot"></span>A patient I'm referring</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>State</label>
+        <div class="seg" style="margin-top:2px">
+          <label class="seg-opt"><input type="radio" name="state" value="MD" checked>Maryland</label>
+          <label class="seg-opt"><input type="radio" name="state" value="PA">Pennsylvania</label>
+          <label class="seg-opt"><input type="radio" name="state" value="other">Other</label>
+        </div>
+      </div>
+      <div class="field"><label for="insurance">Insurance carrier (if any)</label><input class="input" id="insurance" name="insurance" type="text"></div>
+      <div class="field"><label for="note">Anything we should know?</label><textarea class="input" id="note" name="note"></textarea></div>
+      <button type="submit" class="btn btn-primary btn-block" style="padding:var(--space-3) var(--space-4);font-size:15px">Request my assessment</button>
+      <p class="text-muted" style="font-size:12px;margin:0">Confidential and HIPAA-compliant. Requesting an assessment does not obligate you to treatment. If this is an emergency, call 911 or 988.</p>
+    </form>
+  </section>
+</main>
+
+<footer class="sec site-footer">
+  <div class="wrap cols">
+    <div style="display:flex;flex-direction:column;gap:var(--space-2)">
+      <span style="font-family:var(--font-heading);font-weight:800;font-size:18px">P2H</span>
+      <p class="text-muted" style="font-size:13px;margin:0;max-width:30ch">Outpatient treatment for substance use and co-occurring conditions in Easton, Maryland — with inpatient care coming to Baltimore.</p>
+      <a class="btn btn-primary" href="book.html" style="align-self:flex-start;margin-top:var(--space-2)">Book an assessment</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:var(--space-2);font-size:14px">
+      <h6 style="margin:0 0 var(--space-1)">Care</h6>
+      <a href="levels-of-care.html">Levels of care</a>
+      <a href="levels-of-care.html">P2H Recovery — inpatient</a>
+      <a href="levels-of-care.html">P2H Wellness — outpatient</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:var(--space-2);font-size:14px">
+      <h6 style="margin:0 0 var(--space-1)">Company</h6>
+      <a href="locations.html">Locations</a>
+      <a href="resources.html">Resources</a>
+      <a href="tel:14105550142">(410) 555-0142</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:var(--space-2)">
+      <h6 style="margin:0 0 var(--space-1)">Accreditation</h6>
+      <div style="display:flex;gap:var(--space-3);align-items:flex-start">
+        <div class="ph ph-seal">
+          <!-- replace with the official Gold Seal: <img src="img/joint-commission-seal.png" alt="The Joint Commission Gold Seal of Approval"> -->
+          <span>Gold Seal</span>
+        </div>
+        <p class="text-muted" style="font-size:13px;margin:0">Easton outpatient is Joint Commission accredited. Baltimore inpatient has been approved for Part 1 of the two-part early survey.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:var(--space-8)">
+    <div class="legal">
+      <span class="text-muted">© 2026 P2H. All rights reserved.</span>
+      <span style="display:flex;flex-wrap:wrap;gap:var(--space-6)">
+        <a href="#">Privacy</a>
+        <a href="#">Notice of privacy practices</a>
+        <a href="#">Non-discrimination</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

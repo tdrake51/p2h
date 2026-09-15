@@ -1,0 +1,51 @@
+/* P2H site layer — sits on top of modernist.css tokens */
+:root { --p2h-teal: #0e5b66; --p2h-teal-tint: #dde9ea; --p2h-ochre: #96580d; --p2h-ochre-strong: #c8791a; --p2h-ochre-tint: #f3e7d3; }
+body { margin: 0; background: var(--color-bg); color: var(--color-text); }
+a:hover { color: var(--color-accent-600); }
+.btn, .tag { white-space: nowrap; }
+.tag-teal { background: var(--p2h-teal-tint); color: var(--p2h-teal); }
+.tag-ochre { background: var(--p2h-ochre-tint); color: var(--p2h-ochre); }
+.wrap { max-width: 1280px; margin: 0 auto; padding-left: var(--space-8); padding-right: var(--space-8); }
+.sec { border-top: 2px solid var(--color-divider); }
+.crisis { background: var(--color-text); color: var(--color-bg); font-size: 13px; letter-spacing: 0.02em; }
+.crisis .wrap { display: flex; flex-wrap: wrap; gap: var(--space-4); align-items: center; justify-content: space-between; padding-top: 9px; padding-bottom: 9px; }
+.site-header { position: sticky; top: 0; z-index: 20; background: var(--color-bg); }
+.site-header .nav { padding-left: 0; padding-right: 0; flex-wrap: wrap; }
+.brand-mark { width: 30px; height: 30px; background: var(--color-accent); color: var(--color-bg); display: inline-flex; align-items: center; justify-content: center; font-size: 13px; letter-spacing: 0.02em; }
+.nav a { text-decoration: none; }
+.nav a[aria-current="page"] { color: var(--color-accent-700); }
+
+/* Layout helpers */
+.grid { display: grid; gap: var(--space-8); }
+.cols-2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.cols-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+.cols-4 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-6); }
+.stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0; }
+.stat { padding: var(--space-4) var(--space-4) var(--space-6); border-right: 2px solid var(--color-divider); }
+.stat:first-child { padding-left: 0; }
+.stat:last-child { border-right: none; }
+.stat-figure { font-family: var(--font-heading); font-weight: 800; font-size: 30px; line-height: 1.1; }
+.pad { padding-top: var(--space-8); padding-bottom: var(--space-8); }
+.stack { display: flex; flex-direction: column; gap: var(--space-4); align-items: flex-start; }
+.rule-list { display: flex; flex-direction: column; width: 100%; }
+.rule-list > * { border-top: 1px solid var(--color-divider); padding: var(--space-3) 0; }
+.rule-list > *:last-child { border-bottom: 1px solid var(--color-divider); }
+.row { display: flex; gap: var(--space-4); }
+.row .key { font-family: var(--font-heading); font-weight: 800; font-size: 14px; min-width: 120px; }
+.poster { background: var(--color-accent); color: var(--color-bg); }
+.poster h2 { margin: 0; font-size: clamp(36px, 5vw, 64px); letter-spacing: -0.03em; max-width: 20ch; line-height: 1.05; }
+.lede { font-size: 17px; margin: 0; max-width: 52ch; }
+.text-accent { color: var(--color-accent-700); }
+h1.display { margin: 0; font-size: clamp(38px, 4.8vw, 60px); letter-spacing: -0.03em; }
+h2.section { margin: 0; font-size: clamp(30px, 3.4vw, 40px); }
+
+/* Image placeholders — replace the div with <img class="photo" src="img/....jpg" alt="..."> */
+.grayscale img, img.photo { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.05); display: block; }
+.ph { display: flex; align-items: flex-end; padding: var(--space-4); background-image: repeating-linear-gradient(135deg, var(--color-neutral-200) 0 10px, var(--color-neutral-300) 10px 20px); }
+.ph span { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; background: var(--color-bg); color: var(--color-neutral-700); padding: 6px 10px; }
+.ph-seal { width: 76px; height: 76px; flex: none; align-items: center; justify-content: center; padding: 4px; text-align: center; }
+.ph-seal span { font-size: 9px; letter-spacing: 0.06em; }
+.site-footer { background: var(--color-surface); }
+.site-footer .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-6); padding-top: var(--space-8); padding-bottom: var(--space-6); }
+.site-footer a { color: inherit; text-decoration: none; }
+.legal { border-top: 2px solid var(--color-divider); padding-top: var(--space-3); display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: space-between; font-size: 12px; }
