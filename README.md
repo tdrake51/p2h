@@ -25,8 +25,7 @@ Static HTML site — no build step, no dependencies. Works on GitHub Pages as-is
 
 - **Phone number** — every page uses (410) 555-0142 / `tel:14105550142`. Find-and-replace both.
 - **Addresses** — Easton and Baltimore street addresses are marked "to add" in `locations.html`.
-- **Photos** — each placeholder is a `<div class="grayscale ph">` with an HTML comment showing the `<img>` tag to drop in its place. Put files in `site/img/`.
-- **Joint Commission Gold Seal** — footer placeholder; use the official file from your accreditation portal (usage is licensed, don't redraw it).
+- **Photos** — the counselor-client and group-therapy photos are in `img/`. Other placeholders can be replaced with approved images using the same `<img class="photo">` pattern.
 - **Form endpoint** — `book.html`'s `<form action="#">` needs a real handler (Formspree, Netlify Forms, or your intake CRM). Static hosting cannot accept posts. Given PHI, confirm the handler is HIPAA-capable with a BAA.
 - **Legal pages** — Privacy, Notice of Privacy Practices, and Non-discrimination link to `#`.
 - **Licensure claims** — copy currently says Easton is accredited, Baltimore cleared Part 1 of the two-part early survey, PA is in licensure. Update as each step clears.
