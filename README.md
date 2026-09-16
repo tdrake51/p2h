@@ -28,4 +28,4 @@ Static HTML site — no build step, no dependencies. Works on GitHub Pages as-is
 - **Photos** — the counselor-client and group-therapy photos are in `img/`. Other placeholders can be replaced with approved images using the same `<img class="photo">` pattern.
 - **Form endpoint** — `book.html`'s `<form action="#">` needs a real handler (Formspree, Netlify Forms, or your intake CRM). Static hosting cannot accept posts. Given PHI, confirm the handler is HIPAA-capable with a BAA.
 - **Legal pages** — Privacy, Notice of Privacy Practices, and Non-discrimination link to `#`.
-- **Licensure claims** — copy currently says Easton is accredited, Baltimore cleared Part 1 of the two-part early survey, PA is in licensure. Update as each step clears.
+- **Licensure claims** — copy currently says Easton completed Part 1 of the two-part early survey, Baltimore is in Part 1, and PA is in licensure. Update as each step clears.
