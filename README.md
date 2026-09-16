@@ -17,8 +17,8 @@ Static HTML site — no build step, no dependencies. Works on GitHub Pages as-is
 | `locations.html` | Easton, Baltimore, Pennsylvania + program status table |
 | `resources.html` | Article index |
 | `book.html` | Assessment request form |
-| `css/modernist.css` | Design-system tokens and components — edit tokens here to reskin |
-| `css/p2h.css` | Site layer (layout, placeholders, brand colors) |
+| `modernist.css` | Design-system tokens and components — edit tokens here to reskin |
+| `p2h.css` | Site layer (layout, placeholders, brand colors) |
 | `.nojekyll` | Stops GitHub Pages running Jekyll |
 
 ## Before launch
