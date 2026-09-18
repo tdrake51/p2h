@@ -1,10 +1,12 @@
 /* P2H site layer — sits on top of modernist.css tokens */
-:root { --p2h-teal: #0e5b66; --p2h-teal-tint: #dde9ea; --p2h-ochre: #96580d; --p2h-ochre-strong: #c8791a; --p2h-ochre-tint: #f3e7d3; }
+:root { --p2h-teal: #0e5b66; --p2h-teal-tint: #dde9ea; --p2h-ochre: #96580d; --p2h-ochre-strong: #c8791a; --p2h-ochre-tint: #f3e7d3; --p2h-indigo: #2c3a8f; --p2h-indigo-tint: #dfe2f4; }
 body { margin: 0; background: var(--color-bg); color: var(--color-text); }
 a:hover { color: var(--color-accent-600); }
 .btn, .tag { white-space: nowrap; }
 .tag-teal { background: var(--p2h-teal-tint); color: var(--p2h-teal); }
 .tag-ochre { background: var(--p2h-ochre-tint); color: var(--p2h-ochre); }
+.tag-indigo { background: var(--p2h-indigo-tint); color: var(--p2h-indigo); }
+.notice { border-left: 6px solid var(--p2h-indigo); background: var(--color-surface); padding: var(--space-4); width: 100%; box-sizing: border-box; }
 .wrap { max-width: 1280px; margin: 0 auto; padding-left: var(--space-8); padding-right: var(--space-8); }
 .sec { border-top: 2px solid var(--color-divider); }
 .crisis { background: var(--color-text); color: var(--color-bg); font-size: 13px; letter-spacing: 0.02em; }
